@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+  *{
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif; 
+   text-transform: capitalize;
+  }
+
+  :root{
+      --primary:rgb(232,191,205);
+      --white:#ffff;
+      --secondary:rgb(255,229,206);
+      --button:#17a2b8;
+  }
+  #portfolio-home{
+    background:var(--secondary);
+
+}
+   
+  .btn{
+      width:150px;
+  }
+  .portfolio-detail ul li a{
+      font-size: 1.2rem;
+      background-color:#000;
+      color:var(--secondary);
+      margin:5px;
+      padding:10px;
+      border-radius: 5px;
+      border:5px solid var(--secondary);
+      box-shadow: 2px 2px 2px 2px rgba(0,0,0,.175) ;
+      transition: all 0.3s linear;
+  }
+ #detail .nav-link:hover{
+     background: var(--secondary);
+     color: #000;
+     transition: all 0.3s linear;
+ }
+ .btn{
+    background-color:#000;
+    color:var(--secondary);
+    padding:10px;
+    border:5px solid var(--secondary);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.175) ;
+    transition: all 0.3s linear;
+ }
+ .btn:hover{
+    background: var(--secondary);
+    color: #000;
+    transition: all 0.3s linear;
+ }
+
+ section.un-display{
+display: none;
+visibility: hidden;
+ }
+ section.displaystocks{
+     display: block;
+     visibility: visible;
+ }

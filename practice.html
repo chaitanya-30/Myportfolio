@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            display: flex;
+            flex-grow: 1;
+            flex-wrap:wrap;
+            width:600px;
+            height:600px;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            /* background: purple; */
+            /* border:1px purple; */
+        }
+        .box::before{
+            width:2px;
+            height: 600px;
+            background: beige;
+            content: '';
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+        }
+        .box::after{
+            width:600px;
+            height: 2px;
+            background: beige;
+            content: '';
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+        }
+        .box-item{
+            width: 300px;
+            height:300px;
+border-radius: 30px;
+
+        }
+        .box-item:nth-child(1){
+           
+          /* background: linear-gradient(to bottom,yellow,blue) */
+          background: url('images/girl-g0982bb9ae_640.jpg') no-repeat center;
+          border-bottom:1px solid hsl(0, 0%, 93%);
+    border-top:1px solid hsl(0, 0%, 93%);
+    object-fit: cover;
+
+        }
+        .box-item:nth-child(2){
+           
+            background:linear-gradient(to bottom, green,purple);
+
+        }
+        .box-item:nth-child(3){
+           
+           background:linear-gradient(to bottom, cyan,yellowgreen )
+       }
+       
+       .box-item:nth-child(4){
+           
+           background:linear-gradient(to bottom, crimson,gold )
+       }
+       .blurr{
+           height:300px;
+           width:600px;
+           border-bottom:1px solid hsl(0, 0%, 93%);
+    border-top:1px solid hsl(0, 0%, 93%);
+    background: transparent #000;
+       }
+        .content{
+            width:100px;
+            height:100px;
+            padding :20px 20px;
+        }
+        .innerimage img{
+            width:200px;
+            height:200px;
+            object-fit: contain;
+        }
+            </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <div class="box-item">
+
+        </div>
+        <div class="box-item">
+          
+        </div>
+        <div class="box-item">
+         
+        </div>
+        <div class="box-item">
+            
+        </div>
+    </div> -->
+    <div class="blurr">
+        <dib class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, tempore unde ratione voluptatem perferendis sit dolorum porro, voluptatum vitae odio quod recusandae 
+                est veniam rerum delectus sunt libero consequatur cumque!</p>
+        </dib>
+        <div class="innerimage">
+<img src="images/girl-g0982bb9ae_640.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
